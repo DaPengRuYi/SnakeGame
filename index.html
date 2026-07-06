@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SnakeRush 灵蛇冲刺</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="game-panel" aria-label="SnakeRush 灵蛇冲刺">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">课堂挑战模式</p>
+            <h1>SnakeRush</h1>
+            <p class="subtitle">灵蛇冲刺</p>
+          </div>
+          <div class="scoreboard" aria-label="计分板">
+            <div>
+              <span>当前得分</span>
+              <strong id="score">0</strong>
+            </div>
+            <div>
+              <span>最高纪录</span>
+              <strong id="best">0</strong>
+            </div>
+            <div>
+              <span>连续奖励</span>
+              <strong id="combo">x1</strong>
+            </div>
+          </div>
+        </header>
+
+        <div class="arena-wrap">
+          <canvas id="game" width="720" height="720" aria-label="灵蛇冲刺游戏区域"></canvas>
+          <div class="overlay is-visible" id="overlay">
+            <p class="status" id="status">准备开冲</p>
+            <button id="primaryAction" type="button">开始挑战</button>
+          </div>
+        </div>
+
+        <footer class="controls">
+          <button id="pauseBtn" type="button" title="暂停或继续">暂停</button>
+          <button id="restartBtn" type="button" title="重新开始">重新开始</button>
+          <button id="musicBtn" type="button" title="开启或关闭背景音乐">音乐开</button>
+          <div class="hint">直播挑战进行中</div>
+        </footer>
+      </section>
+
+      <aside class="side-panel" aria-label="游戏状态">
+        <div class="stat">
+          <span>当前关卡</span>
+          <strong id="stage">霓虹方格</strong>
+        </div>
+        <div class="stat">
+          <span>速度倍率</span>
+          <strong id="speed">1.0x</strong>
+        </div>
+        <div class="stat">
+          <span>惊喜道具</span>
+          <strong id="power">暂无</strong>
+        </div>
+        <div class="stat">
+          <span>暴富能量</span>
+          <strong id="rush">0%</strong>
+        </div>
+        <div class="mini-map" aria-hidden="true">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </aside>
+    </main>
+
+    <script src="./game.js"></script>
+  </body>
+</html>
