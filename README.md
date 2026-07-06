@@ -1,8 +1,7 @@
-# SnakeRush
+# SnakeGame
 
-SnakeRush 灵蛇冲刺 is a browser-based snake game built with plain HTML, CSS, and JavaScript.
+贪吃蛇小游戏，使用原生 HTML、CSS 和 JavaScript 实现。
 
 ## Run locally
 
-Open `index.html` in a browser.
-
+直接用浏览器打开 `index.html`。
